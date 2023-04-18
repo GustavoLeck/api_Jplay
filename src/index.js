@@ -1,5 +1,5 @@
 import express from "express";
-// import cors from "cors";
+import cors from "cors";
 import status from "./routes/service-status-route.js";
 import musicas from "./routes/consult-musicas-route.js"
 
@@ -10,7 +10,7 @@ server.use(
         extended: true,
     })
 );
-// server.use(cors());
+server.use(cors());
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 const port = 3050;
