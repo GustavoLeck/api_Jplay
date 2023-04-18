@@ -1,6 +1,7 @@
+import { ConsultMusicas } from "../use-cases/consult-musica.js";
 export class ConsultMusicasController {
     async handle(req, res) {
-        const teste = res;
-        res.status(200).send("Top")
+        const resultadoPesquisa = await new ConsultMusicas().execute(req.body)
+        res.status(200).send(resultadoPesquisa)
     }
 }

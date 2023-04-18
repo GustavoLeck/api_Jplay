@@ -20,6 +20,8 @@
   "homepage": "https://github.com/GustavoLeck/api_Jplay#readme",
   "dependencies": {
     "@prisma/client": "^4.12.0",
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "nodemon": "^2.0.22",
