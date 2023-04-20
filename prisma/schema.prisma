@@ -13,10 +13,10 @@ type QuantidadeGeneroAnoQuantidadeAno {
 }
 
 model QuantidadeGeneroAno {
-  id              String                             @id @default(auto()) @map("_id") @zPlugin.ObjectId
-  Genero          String
-  QuantidadeAno   QuantidadeGeneroAnoQuantidadeAno[]
-  QuantidadeTotal Int
+  id                   String                             @id @default(auto()) @map("_id") @zPlugin.ObjectId
+  AtualQuantidadeTotal Int
+  Genero               String
+  QuantidadeAno        QuantidadeGeneroAnoQuantidadeAno[]
 }
 
 model musicas {

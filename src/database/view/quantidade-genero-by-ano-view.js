@@ -1,8 +1,10 @@
 import { prisma } from "../../prisma/client.js";
 
-export class GenerateQuantidadeMusicasByAnoView {
-    async selectAll(value) {
-        return await prisma.QuantidadeGeneroAno.findMany()
+export class QuantidadeMusicasByAnoView {
+    async select(valor) {
+        return await prisma.QuantidadeGeneroAno.findMany({
+            where: valor
+        })
     }
     async updateOne(id, valor) {
         return await prisma.QuantidadeGeneroAno.update({
@@ -10,5 +12,4 @@ export class GenerateQuantidadeMusicasByAnoView {
             data: valor
         })
     }
-
 }

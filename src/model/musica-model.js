@@ -1,4 +1,4 @@
-export class ConsultMusicaModel {
+export class MusicaModel {
     constructor(value) {
         if (value.Musica !== undefined) {
             this.Musica = value.Musica;
