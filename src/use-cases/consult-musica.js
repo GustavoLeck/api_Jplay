@@ -1,8 +1,8 @@
 import { ConsultMusicasView } from "../database/view/consult-musicas-view.js";
-import { ConsultMusicaModel } from "../model/consult-musica-model.js";
+import { MusicaModel } from "../model/musica-model.js";
 export class ConsultMusicas {
     async execute(value) {
-        const valueFormated = new ConsultMusicaModel(value)
+        const valueFormated = new MusicaModel(value)
         return await new ConsultMusicasView().execute(valueFormated);
     }
 }
