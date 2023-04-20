@@ -5,7 +5,7 @@ export class ConsultMusicasController {
         const totalResposta = resultadoPesquisa.length
         res.status(200).send({
             QuantidadeMusica: totalResposta,
-            musicas: resultadoPesquisa
+            Musicas: resultadoPesquisa
         })
     }
 }
