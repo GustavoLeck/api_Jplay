@@ -2,7 +2,7 @@ import { ConsultQuantidadeMusicasByGenero } from "../use-cases/consult-quantidad
 
 export class ConsultQuantidadeGeneroByAnoController {
     async handle(req, res) {
-        console.log("=> Rota de busca de musicas por ano usada: " + req.body)
+        console.log("=> Rota de busca de musicas por ano usada: " + JSON.stringify(req.body))
         res.status(200).send(await new ConsultQuantidadeMusicasByGenero().execute(req.body));
     }
 }
