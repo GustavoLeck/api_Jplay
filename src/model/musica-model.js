@@ -4,7 +4,7 @@ export class MusicaModel {
             this.Musica = value.Musica;
         }
         if (value.Ano !== undefined) {
-            this.Ano = value.Ano;
+            this.Ano = parseInt(value.Ano);
         }
         if (value.Artista !== undefined) {
             this.Artista = value.Artista;
@@ -16,7 +16,7 @@ export class MusicaModel {
             this.Vizualizacao = value.Vizualizacao;
         }
         if (value.Estrela !== undefined) {
-            this.Estrela = value.Estrela;
+            this.Estrela = parseInt(value.Estrela);
         }
         if (value.Generos !== undefined) {
             this.Generos = value.Generos;
