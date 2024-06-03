@@ -11,8 +11,8 @@ services:
     networks:
       - mongoNet
     restart: on-failure
-    container_name: jplay-API
-    image: jplay
+    container_name: jplay-api
+    image: jplay-api
     command: npm start
     ports:
       - "5050:5050"
