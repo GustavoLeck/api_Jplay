@@ -1,0 +1,18 @@
+version: '3.3'
+
+networks:
+  mongoNet:
+   name: mongoNet
+   driver: bridge
+
+services:
+  api:
+    build: .
+    networks:
+      - mongoNet
+    restart: on-failure
+    container_name: jPlay-API
+    image: jPlay
+    command: npm start
+    ports:
+      - "5050:5050"
